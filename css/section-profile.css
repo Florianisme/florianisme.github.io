@@ -1,0 +1,127 @@
+#profile {
+    background-color: #fafafa;
+    display: flex;
+    padding: 80px 0;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    min-height:100vh;
+}
+
+#profile-left {
+    margin-right: 4vw;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#profile-right {
+    display: flow-root;
+    flex-grow: 1;
+    min-height: 250px;
+}
+
+#avatar-picture {
+    height: 15vw;
+    width: auto;
+    margin: 0 auto;
+}
+
+#profile-right > h3 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1c1c1c;
+}
+
+#profile-right > p {
+    color: #727272;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+#profile-right > ul {
+    column-fill: balance;
+    height: 100px;
+    list-style-position: inside;
+}
+
+.profile-list-item {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.profile-list-type {
+    color: #272727;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.profile-list-text {
+    color: #727272;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-list-link {
+    margin-right: 16px;
+}
+
+.mouse {
+    width: 3px;
+    padding: 8px 10px;
+    height: 25px;
+    border: 2px solid #1c1c1c;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 8px;
+    border-radius: 25%;
+    background-color: #1c1c1c;
+    animation-name: scroll;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+}
+
+.scroll-down {
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    float: bottom;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4vh;
+}
+
+@media (max-device-width: 992px) {
+    #profile {
+        padding-top: 40px;
+    }
+
+    #profile-left {
+        display: block;
+        float: unset;
+        margin-right: unset;
+        margin-bottom: 4vh;
+        height: 20vh;
+    }
+
+    #avatar-picture {
+        height: 19vh;
+    }
+}
