@@ -71,6 +71,16 @@
     margin-right: 16px;
 }
 
+.scroll-down {
+    padding-bottom: 48px
+}
+
+@media (max-width: 991px) {
+  .scroll-down {
+    display: none !important;
+  }
+}
+
 .mouse {
     width: 3px;
     padding: 8px 10px;
@@ -89,6 +99,11 @@
     animation-duration: 1.8s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
     animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
 }
 
 .scroll-down {
