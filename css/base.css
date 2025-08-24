@@ -12,14 +12,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto",sans-serif;
 }
 
-.parallax-container {
-    height: 20vw;
-}
-
-.parallax-shadow {
-    box-shadow: 0px 10px 47px 0px rgba(0,0,0,0.75);
-}
-
 .card-container {
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
     background: #ffffff;
@@ -29,10 +21,4 @@ h1, h2, h3, h4, h5, h6 {
 .card-container:hover {
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
     cursor: pointer;
-}
-
-@media (max-device-width: 992px) {
-    .parallax-container {display: none}
-    .parallax-shadow {box-shadow: unset}
-    .scroll-down {display: none}
 }
